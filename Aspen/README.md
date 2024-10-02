@@ -1,0 +1,29 @@
+# ASEQ Migration
+## Introduction
+This set of batch files are designed to work from a portable drive to migrate the Aspen.db file from one computer to another. 
+
+## Installation
+1. Copy the batch files to a portable storage device.
+2. Download and extract a copy of the ASPENLocal.mdb file from the [Alpine Website](http://www.alpinetg.com/download/ASPENLocal.zip).
+3. NOTE: At this time, the ASPENLocal file seems to be compressed as a .rar, even though it shows up as a zip file. 7Zip will note this during the extraction process.  
+4. Place the ASPENLocal.mdb file into the same directory as the batch files.
+
+## Usage
+### Source Computer
+1. Connect the portable storage device to the SOURCE computer.
+2. Right-Click on the **Copy-AspenDB-From-Source-PC.bat** file and select **Run as Administrator**.
+3. When prompted for a username, enter a name for the folder. *Remember the spelling you use for the next script.*
+4. The script will copy the Aspen.db file from the computer to the folder you specified in step 3. You will be asked to confirm if the file copied successfully. Press any key to continue.
+5. The script will finish by restarting the SQL service before closing.
+6. Remove the portable storage device from the SOURCE computer.
+
+### Destination Computer
+1. Connect the portable storage device to the DESTINATION computer.
+2. Right-Click on the **Copy-AspenDB-to-Destination-PC.bat** file and select **Run as Administrator**.
+3. When prompted for a username, enter the name of the folder you used on the source machine.
+4. You will be asked to confirm if the file copied successfully. Press any key to continue.
+5. The script will finish by renaming the local ASPENLocal.mdb file, and replacing it with the one downloaded from the Alpine Website, and deleting the Aspen.log file.
+6. The script will restart the SQL service, and pause to allow you to read through the dialog to see if the operation was successful.
+7. When finished, press any key to close the script.
+
+WIP
