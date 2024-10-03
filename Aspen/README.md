@@ -43,7 +43,7 @@ This set of batch files are designed to work from a portable drive to migrate th
 ASEQ Migration is released under the MIT License. See the **[LICENSE](link)** file for details.
 
 ## Authors and Acknowlegements
-ASEQ Migration scripts created by **[Daniel Segovia-Brose](https://github.com/theradiantwisp)**
+ASEQ Migration scripts created by **[TheRadiantWisp](https://github.com/theradiantwisp)**
 Original framework created by Erik Norvell.
 
 ## ChangeLog
